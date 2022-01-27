@@ -35,7 +35,7 @@ class AllBeers extends React.Component {
                 {this.state.listOfAllBeers.map((eachBeer) => {
                     return (
                         <div key={eachBeer._id}>
-                            <img src={eachBeer.image_url}/>
+                            <img src={eachBeer.image_url} alt="Beer bottle" />
                             <h1><Link to={`/beers/${eachBeer._id}`}>{eachBeer.name}</Link></h1>
                             <h2>{eachBeer.tagline}</h2>
                             <h3>Created by: {eachBeer.contributed_by}</h3>

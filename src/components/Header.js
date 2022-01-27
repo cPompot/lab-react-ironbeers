@@ -6,7 +6,11 @@ class Header extends React.Component {
         return (
             <nav>
                 <div>
-                    <Link to="/">🏠</Link>
+                    <Link to="/">
+                        <span>
+                            🏠
+                        </span>
+                    </Link>
                 </div>
             </nav>
         )
