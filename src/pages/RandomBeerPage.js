@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Header from "../components/Header";
 
 class RandomBeer extends Component {
     render() {
         return (
-            <div></div>
+            <div>
+                <Header />
+                <h2>Choose a beer</h2>
+            </div>
         )
     }
 }
