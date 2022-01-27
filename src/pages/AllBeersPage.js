@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../components/Header";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const apiURL = 'https://ih-beers-api2.herokuapp.com/beers';
 
@@ -35,7 +36,7 @@ class AllBeers extends React.Component {
                     return (
                         <div key={eachBeer._id}>
                             <img src={eachBeer.image_url}/>
-                            <h1>{eachBeer.name}</h1>
+                            <h1><Link to={`/beers/${eachBeer._id}`}>{eachBeer.name}</Link></h1>
                             <h2>{eachBeer.tagline}</h2>
                             <h3>Created by: {eachBeer.contributed_by}</h3>
                         </div>
